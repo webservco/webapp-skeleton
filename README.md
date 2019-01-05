@@ -86,6 +86,11 @@ Testdox:
 php test:d
 ```
 
+### Run all checks
+```
+composer all
+```
+
 ---
 
 ## Other documents
