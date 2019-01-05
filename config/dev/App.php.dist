@@ -2,8 +2,8 @@
 
 return [
     'mail' => [
-        'to' => ['radu@predator.webserv.co', 'Swup'],
-        'from' => ['apache@predator.webserv.co', 'Swup'],
-        'bcc' => ['radu@predator.webserv.co', 'Swup'],
+        'to' => ['to@example.com', 'Name'],
+        'from' => ['from@example.com', 'Name'],
+        'bcc' => ['bcc@example.com', 'Name'],
     ],
 ];
