@@ -80,6 +80,7 @@ gulp.task('build', gulp.series(
 ));
 
 gulp.task('clean', gulp.series(
+    cleanAssets,
     cleanLayout
 ));
 
