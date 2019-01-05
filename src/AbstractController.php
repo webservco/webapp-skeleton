@@ -13,7 +13,6 @@ abstract class AbstractController extends \WebServCo\Framework\AbstractControlle
     use \Project\Traits\ControllerViewTrait;
 
     use \Project\Traits\DatabaseTrait;
-    use \Project\Traits\ExposeLibrariesTrait;
 
     public function __construct($namespace)
     {
