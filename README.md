@@ -2,7 +2,12 @@
 
 A simple webservco/framework Web Application Skeleton to help start a new project fast.
 
-The project creates one route (Web and CLI): `App/home`.
+---
+
+## Features
+- One starter route (Web and CLI): `App/home`.
+- [HTML5 App](https://github.com/webservco/html5-app) implementation with dynamic page navigation.
+
 ---
 
 ## Setup
