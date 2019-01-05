@@ -1,0 +1,10 @@
+<?php
+return [
+    'connection' => [
+        'host' => 'localhost',
+        'username' => 'c1_webapp',
+        'passwd' => '',
+        'dbname' => 'c1_webapp',
+        'port' => '3306',
+    ],
+];
