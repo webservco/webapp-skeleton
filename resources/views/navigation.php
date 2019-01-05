@@ -1,13 +1,12 @@
 <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-    <a class="app-nav navbar-brand" href="<?=$this->data('url/app', '/')?>dashboard">Home</a>
+    <a class="app-nav navbar-brand" href="<?=$this->data('url/app', '/')?>App/home">Home</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarCollapse">
     <ul class="navbar-nav mr-auto">
         <?php foreach ([
-            'App/home' => 'Home',
-            'dashboard' => 'Dashboard (home alias)',
+            'dashboard' => 'Dashboard (Home alias)',
             'Devel/noexist' => 'Noexist',
             ] as $location => $title) { ?>
             <li class="nav-item<?=$this->data('location/current') == $location ? ' active' : ''?>">
