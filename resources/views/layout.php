@@ -12,7 +12,8 @@
     <?php /* specify favicon path when not in domain root */ ?>
     <link href="<?=$this->data('url/app', '/')?>favicon.ico" rel="icon" type="image/x-icon" />
 
-    <link rel="stylesheet" href="<?=$this->data('url/app', '/')?>assets/css/style.css?v=">
+    <?php /* Optimized css file, do not edit. Please see docs/Layout.md */ ?>
+    <link rel="stylesheet" href="<?=$this->data('url/app', '/')?>assets/css/styles.min.css?v=b6c836f">
 </head>
 <body>
 
@@ -27,12 +28,23 @@
     <script>
     //<![CDATA[
     var urlApp = '<?=$this->data('url/app', '/')?>';
+    //]]>
+    </script>
+    <?php /* Optimized js file, do not edit. Please see docs/Layout.md
+    Scripts included:
+    jquery
+    boostrap bundle (bootstrap and popper)
+    pace-js
+    history-navigation
+    app scripts: resources/javascript/*
+    */ ?>
+    <script defer src="<?=$this->data('url/app', '/')?>assets/js/scripts.min.js?v=b6c836f"></script>
+    <script>
+    //<![CDATA[
     window.addEventListener('load', function () { <?php /* https://stackoverflow.com/questions/45869839/javascript-run-inline-script-after-load-async-resources */ ?>
 
-        <?php /* Load scripts.js after all external ones, then execute page scripts. */ ?>
-        $.getScript("<?=$this->data('url/app', '/')?>assets/js/scripts.js?v=", function(data, textStatus, jqxhr) {
-            <?php /* inline page scripts */ ?>
-        });
+        <?php /* inline page scripts */ ?>
+
     });
     //]]>
     </script>
