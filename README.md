@@ -14,19 +14,23 @@ A simple webservco/framework Web Application Skeleton to help start a new projec
 
 ### Install
 ```
-git clone https://github.com/webservco/webapp-skeleton.git my-project
-cd my-project
+git clone https://github.com/webservco/webapp-skeleton.git my-project && cd my-project
 ```
-Optionally set up your own repository:
+### Set up your own repository
 ```
 git remote rename origin old-origin
 git remote add origin {REPOSITORY}
 git push -u origin --all
 git push -u origin --tags
 ```
-Customize `composer.json` and `package.json`.
 
-Install dependencies:
+### Customize project
+Edit:
+- `composer.json`
+- `package.json`
+- `README.md`
+
+### Install dependencies
 ```
 composer install
 npm install
@@ -106,4 +110,5 @@ composer all
 ---
 
 ## Other documents
+- [App Customization](/docs/Customization.md)
 - [Layout documentation](/docs/Layout.md)
