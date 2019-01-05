@@ -28,7 +28,7 @@ Edit `.env` file.
 
 ### Create configuration options files
 ```
-for file in config/dev/*.dist; do cp -pi "$file" "${file%.*}.php"; done
+for file in config/dev/*.dist; do cp -pi "$file" "${file%.*}"; done
 ```
 Edit configuration files.
 
