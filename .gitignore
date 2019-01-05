@@ -1,5 +1,7 @@
+node_modules/
 vendor/
 composer.lock
+package-lock.json
 
 # Configuration
 config/*/*.php
