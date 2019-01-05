@@ -11,6 +11,6 @@ return [
      * Do not add the dummy extension here.
      */
     'routes' => [
-        'privacy' => 'App/home',
+        'dashboard' => 'App/home',
     ],
 ];
