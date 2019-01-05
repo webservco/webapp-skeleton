@@ -1,4 +1,5 @@
 vendor/
 
 # Configuration
+config/*/*.php
 .env
