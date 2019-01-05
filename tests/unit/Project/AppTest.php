@@ -1,5 +1,5 @@
 <?php
-namespace Tests\ApiClient;
+namespace Tests\Project;
 
 use PHPUnit\Framework\TestCase;
 use Project\App;
