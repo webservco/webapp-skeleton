@@ -29,7 +29,7 @@
     "autoload" : {
         "psr-4" : {
             "Project\\" : "src/",
-            "Tests\\" : "tests/unit/Project/"
+            "Tests\\" : "tests/unit/"
         }
     },
     "scripts" : {
