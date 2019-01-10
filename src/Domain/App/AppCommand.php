@@ -22,6 +22,6 @@ final class AppCommand extends \Project\AbstractController
         $this->outputCli();
         $this->outputCli('Hello World!');
         $this->outputCli();
-        return new \WebServCo\Framework\CliResponse('', true);
+        return new \WebServCo\Framework\Cli\Response('', true);
     }
 }
