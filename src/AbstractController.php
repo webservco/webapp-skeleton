@@ -26,13 +26,4 @@ abstract class AbstractController extends \WebServCo\Framework\AbstractControlle
         $this->initViews($namespace);
         $this->initI18n();
     }
-
-    protected function outputJsonCustom($data = [])
-    {
-        return new \WebServCo\Framework\HttpResponse(
-            $this->output()->json($data),
-            200,
-            ['Content-Type' => 'application/json']
-        );
-    }
 }
