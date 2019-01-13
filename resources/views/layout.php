@@ -13,7 +13,7 @@
     <link href="<?=$this->data('url/app', '/')?>favicon.ico" rel="icon" type="image/x-icon" />
 
     <?php /* Optimized css file, do not edit. Please see docs/Layout.md */ ?>
-    <link rel="stylesheet" href="<?=$this->data('url/app', '/')?>assets/css/styles.min.css?v=b6c836f">
+    <link rel="stylesheet" href="<?=$this->data('url/app', '/')?>assets/css/styles.min.css?v=1ebdf82">
 </head>
 <body>
 
@@ -30,21 +30,12 @@
     var urlApp = '<?=$this->data('url/app', '/')?>';
     //]]>
     </script>
-    <?php /* Optimized js file, do not edit. Please see docs/Layout.md
-    Scripts included:
-    jquery
-    boostrap bundle (bootstrap and popper)
-    pace-js
-    history-navigation
-    app scripts: resources/javascript/*
-    */ ?>
-    <script defer src="<?=$this->data('url/app', '/')?>assets/js/scripts.min.js?v=b6c836f"></script>
+    <?php /* Optimized js file, do not edit. Please see docs/Layout.md */ ?>
+    <script defer src="<?=$this->data('url/app', '/')?>assets/js/scripts.min.js?v=1ebdf82"></script>
     <script>
     //<![CDATA[
     window.addEventListener('load', function () { <?php /* https://stackoverflow.com/questions/45869839/javascript-run-inline-script-after-load-async-resources */ ?>
-
-        <?php /* inline page scripts */ ?>
-
+        <?php /* Inline page scripts. Only for custom per-page scripts. Put general scripts in JS files. */ ?>
     });
     //]]>
     </script>
