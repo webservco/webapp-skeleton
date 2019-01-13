@@ -28,6 +28,7 @@ function browserSyncReload(done) {
 // Cleans: "layout" folder, image cache
 function cleanLayout(done) {
     del.sync(['resources/layout/css/*']);
+    del.sync(['resources/layout/webfonts/*']);
     cache.clearAll();
     done();
 }
@@ -58,6 +59,16 @@ function distCssJs() {
     .pipe(gulp.dest('public/assets'));
 }
 
+function distFonts() {
+    return gulp.src('resources/layout/webfonts/*')
+    .pipe(gulp.dest('public/assets/webfonts'));
+}
+
+function fonts() {
+    return gulp.src('node_modules/@fortawesome/fontawesome-free/webfonts/*')
+    .pipe(gulp.dest('resources/layout/webfonts'));
+}
+
 // Watch files for changes
 function watchFiles() {
     gulp.watch('resources/scss/**/*.scss', css);
@@ -72,8 +83,10 @@ function watchFiles() {
 gulp.task('build', gulp.series(
     cleanLayout,
     css,
+    fonts,
     gulp.parallel(
-        distCssJs
+        distCssJs,
+        distFonts
     ),
     cleanAssets,
     cleanLayout
@@ -87,7 +100,9 @@ gulp.task('clean', gulp.series(
 // Developement - serve layout directory with hot reload
 gulp.task('devel', gulp.parallel(
     gulp.series(
+        cleanLayout,
         css,
+        fonts,
         browserSyncInit
     ),
     watchFiles

@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+<nav class="navbar navbar-expand-md navbar-dark bg-primary fixed-top">
     <a class="app-nav navbar-brand" href="<?=$this->data('url/app', '/')?>App/home">Home</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -22,7 +22,7 @@
             </div>
         </li>
         <li class="nav-item">
-            <a class="btn btn-outline-success my-2 my-sm-0" href="https://github.com/webservco/webapp-skeleton">GitHub</a>
+            <a class="btn btn-primary my-2 my-sm-0" href="https://github.com/webservco/webapp-skeleton">GitHub</a>
         </li>
     </ul>
 </div>
