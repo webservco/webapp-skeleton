@@ -13,6 +13,10 @@
 
     <!--build:css css/styles.min.css-->
     <link rel="stylesheet" href="css/main.css"><!-- contains: bootstrap, fontawesome css -->
+    <link rel="stylesheet" href="./../../node_modules/datatables.net-bs4/css/dataTables.bootstrap4.css">
+<!-- disabled
+<link rel="stylesheet" href="./../../node_modules/datatables.net-responsive-bs4/css/responsive.bootstrap4.css">
+-->
     <link rel="stylesheet" href="./../../node_modules/pace-js/themes/green/pace-theme-center-simple.css">
     <link rel="stylesheet" href="css/app.css">
     <!--endbuild-->
@@ -45,12 +49,20 @@
     <!--build:js js/scripts.min.js defer -->
     <script defer src="./../../node_modules/jquery/dist/jquery.js"></script>
     <script defer src="./../../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script defer src="./../../node_modules/datatables.net/js/jquery.dataTables.js"></script>
+    <script defer src="./../../node_modules/datatables.net-bs4/js/dataTables.bootstrap4.js"></script>
+<!-- disabled
+    <script defer src="./../../node_modules/datatables.net-responsive/js/dataTables.responsive.js"></script>
+    <script defer src="./../../node_modules/datatables.net-responsive-bs4/js/responsive.bootstrap4.js"></script>
+-->
     <script defer src="./../../node_modules/pace-js/pace.js"></script>
     <script defer src="./../../node_modules/@webservco/history-navigation/src/jquery.history-navigation.js"></script>
     <!-- Font Awesome SVG. Disable if using Font Awesome CSS
     <script defer src="./../../node_modules/@fortawesome/fontawesome-free/js/all.js"></script>
     <!-- -->
     <!-- App -->
+    <script defer src="./../javascript/dataTables/formatDetailsRow.js"></script><!-- DataTables -->
+    <script defer src="./../javascript/dataTables/dataTableServerSide.js"></script><!-- DataTables -->
     <script defer src="./../javascript/initialise.js"></script>
     <script defer src="./../javascript/main.js"></script>
     <!-- endbuild -->

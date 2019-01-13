@@ -27,4 +27,11 @@ trait ControllerTrait
         $this->initDomain();
         $this->initMeta($action);
     }
+
+    protected function requirePostMethod()
+    {
+        if (\WebServCo\Framework\Http\Method::POST != $this->request()->getMethod()) {
+            throw new ApplicationException('POST method required');
+        }
+    }
 }

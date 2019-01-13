@@ -1,8 +1,8 @@
-
-// test class (unused) to check sass processing
+/* test class (unused) to check sass processing
 .test {
     width: percentage(5/7);
 }
+*/
 
 // App
 body {
@@ -11,4 +11,25 @@ body {
 
 .container {
     padding-top: 1rem;
+}
+
+// DataTables
+td.details-control {
+    position: relative;
+    cursor: pointer;
+}
+td.details-control:after {
+    position: absolute;
+    //display: none; // needed when using FA SVG
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f0fe";
+}
+tr.shown td.details-control:after {
+    // all of the above, except:
+    content: "\f146";
 }

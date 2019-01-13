@@ -7,6 +7,7 @@
     <ul class="navbar-nav mr-auto">
         <?php foreach ([
             'dashboard' => 'Dashboard (Home alias)',
+            'DataTables/simple' => 'DataTables',
             'Devel/noexist' => 'Noexist',
             ] as $location => $title) { ?>
             <li class="nav-item<?=$this->data('location/current') == $location ? ' active' : ''?>">
