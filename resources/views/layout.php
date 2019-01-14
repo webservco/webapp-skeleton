@@ -20,7 +20,7 @@
 <?=$this->data('tpl_navigation')?>
 
     <main role="main" id="main">
-        <div id="content" class="container">
+        <div id="content" class="container" data-url="<?=$this->data('url/current')?>">
 <?=$this->data('tpl_content')?>
         </div>
     </main>
