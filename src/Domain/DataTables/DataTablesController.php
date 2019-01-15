@@ -10,6 +10,13 @@ final class DataTablesController extends \Project\AbstractController
         $this->repository = new DataTablesRepository($this->outputLoader);
     }
 
+    public function database()
+    {
+        $this->init(__FUNCTION__);
+
+        return $this->outputHtml($this->getData(), $this->getView(__FUNCTION__));
+    }
+
     public function datatables($type)
     {
         $this->init(__FUNCTION__);
@@ -36,14 +43,16 @@ final class DataTablesController extends \Project\AbstractController
         return new \WebServCo\Framework\Json\Response($response);
     }
 
-    public function simple()
+    public function details($id)
     {
         $this->init(__FUNCTION__);
+
+        $this->setData('item', $this->repository->getitem($id));
 
         return $this->outputHtml($this->getData(), $this->getView(__FUNCTION__));
     }
 
-    public function database()
+    public function simple()
     {
         $this->init(__FUNCTION__);
 

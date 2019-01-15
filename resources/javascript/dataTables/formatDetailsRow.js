@@ -4,7 +4,7 @@ function formatDetailsRow(rowData) {
         .addClass( 'loading' )
         .text( 'Loading...' );
 
-    div.load(urlApp + "Clients/details/" + rowData.DT_RowId + " #content", function(response, status, xhr) {
+    div.load(urlApp + "DataTables/details/" + rowData.DT_RowId + " #content", function(response, status, xhr) {
 
     }).removeClass( 'loading' );
 
