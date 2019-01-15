@@ -14,15 +14,15 @@ CREATE TABLE ws_test_data (
 ```
 
 ## Create stored procedure
-This procedure inserts 1 000 000 rows or random numbers.
+This procedure inserts 10 000 000 rows or random numbers.
 ```
 DELIMITER $$
 CREATE PROCEDURE generate_ws_test_data()
 BEGIN
     DECLARE i INT DEFAULT 1;
-    WHILE i <= 1000000 DO
+    WHILE i <= 10000000 DO
         INSERT INTO ws_test_data (id, name, value) VALUES
-        (i, CONCAT('Name ', i), FLOOR(RAND()*(1000000-100000+1))+100000);
+        (i, CONCAT('Name ', i), FLOOR(RAND()*(10000000-1000000+1))+1000000);
         SET i = i + 1;
     END WHILE;
 END$$
@@ -30,6 +30,11 @@ DELIMITER ;
 ```
 
 ## Generate data
+
+**Notes**:
+- This procedure can run for a long time depending on your computer hardware specifications;
+- The resulting data will require about 666 Mb of hard disk space;
+
 ```
 mysql -h localhost -u c1_webapp -p
 USE c1_webapp;

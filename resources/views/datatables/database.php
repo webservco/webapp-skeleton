@@ -5,9 +5,9 @@
 <p>
     The search is customized in the following way:
     <ul>
-        <li><code>id</code> <small><em>LIKE %{search}%</em></small></li>
-        <li><code>name</code> <small><em>= {search}</em></small></li>
-        <li><code>value</code> <small><em>LIKE {search}%</em></small></li>
+        <li><code>id</code> <small>exact match <em>= {search}</em></small></li>
+        <li><code>name</code> <small>partial match <em>LIKE %{search}%</em></small></li>
+        <li><code>value</code> <small>matches items starting with the search query <em>LIKE {search}%</em></small></li>
     </ul>
 </p>
 

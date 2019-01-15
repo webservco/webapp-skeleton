@@ -56,7 +56,7 @@ class DataTablesDatabase extends \WebServCo\Framework\DataTables\AbstractDataTab
                 if (!empty($searchValue)) {
                     $columnData = $column->getData();
                     switch ($columnData) {
-                        case 'name':
+                        case 'id':
                             $query .= sprintf(
                                 " AND %s = ?",
                                 $this->getDatabaseColumnName($columnData)
