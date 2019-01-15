@@ -24,7 +24,9 @@ final class DataTablesController extends \Project\AbstractController
         $this->requirePostMethod();
 
         try {
-            $request = \WebServCo\Framework\DataTables\RequestHelper::init($this->request()->getData()); // \WebServCo\Framework\DataTables\Request
+            $request = \WebServCo\Framework\DataTables\RequestHelper::init(
+                $this->request()->getData()
+            ); // \WebServCo\Framework\DataTables\Request
             switch ($type) {
                 case 'database':
                     $dataTables = new DataTablesDatabase($this->db());
