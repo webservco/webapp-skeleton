@@ -1,6 +1,6 @@
 # webservco/webapp-skeleton
 
-A simple webservco/framework Web Application Skeleton to help start a new project fast.
+A simple [webservco/framework](https://github.com/webservco/framework) Web Application Skeleton to help start a new project fast.
 
 ---
 
