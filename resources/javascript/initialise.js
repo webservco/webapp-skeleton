@@ -2,7 +2,17 @@
 function initialise() {
     dataTableServerSide(
         "#datatables-simple",
-        urlApp + "DataTables/ajax",
+        urlApp + "DataTables/datatables/simple",
+        [
+            { "data": "id" },
+            { "data": "name" },
+            { "data": "value" },
+        ],
+        [[ 2, "asc" ]] // name
+    );
+    dataTableServerSide(
+        "#datatables-database",
+        urlApp + "DataTables/datatables/database",
         [
             { "data": "id" },
             { "data": "name" },

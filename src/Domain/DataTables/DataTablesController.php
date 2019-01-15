@@ -10,7 +10,7 @@ final class DataTablesController extends \Project\AbstractController
         $this->repository = new DataTablesRepository($this->outputLoader);
     }
 
-    public function ajax()
+    public function datatables($type)
     {
         $this->init(__FUNCTION__);
 
@@ -18,7 +18,15 @@ final class DataTablesController extends \Project\AbstractController
 
         try {
             $request = \WebServCo\Framework\DataTables\RequestHelper::init($this->request()->getData()); // \WebServCo\Framework\DataTables\Request
-            $dataTables = new DataTablesSimple();
+            switch ($type) {
+                case 'database':
+                    $dataTables = new DataTablesDatabase($this->db());
+                    break;
+                case 'simple':
+                default:
+                    $dataTables = new DataTablesSimple();
+                    break;
+            }
             $response = $dataTables->getResponse($request); // \\WebServCo\Framework\DataTables\Response
         } catch (\InvalidArgumentException $e) {
             // log etc
@@ -29,6 +37,13 @@ final class DataTablesController extends \Project\AbstractController
     }
 
     public function simple()
+    {
+        $this->init(__FUNCTION__);
+
+        return $this->outputHtml($this->getData(), $this->getView(__FUNCTION__));
+    }
+
+    public function database()
     {
         $this->init(__FUNCTION__);
 

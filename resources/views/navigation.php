@@ -7,13 +7,19 @@
     <ul class="navbar-nav mr-auto">
         <?php foreach ([
             'dashboard' => 'Dashboard (Home alias)',
-            'DataTables/simple' => 'DataTables',
             'Devel/noexist' => 'Noexist',
             ] as $location => $title) { ?>
             <li class="nav-item<?=$this->data('location/current') == $location ? ' active' : ''?>">
                 <a class="app-nav nav-link" href="<?=$this->data('url/app', '/')?><?=$location?>"><?=$title?></a>
             </li>
         <?php } ?>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="dropdown-datatables" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">DataTables</a>
+            <div class="dropdown-menu" aria-labelledby="dropdown-datatables">
+                <a class="app-nav dropdown-item" href="<?=$this->data('url/app', '/')?>DataTables/simple">Simple</a>
+                <a class="app-nav dropdown-item" href="<?=$this->data('url/app', '/')?>DataTables/database">Database</a>
+            </div>
+        </li>
     </ul>
     <ul class="navbar-nav">
         <li class="nav-item dropdown">
