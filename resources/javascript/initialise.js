@@ -18,6 +18,6 @@ function initialise() {
             { "data": "name" },
             { "data": "value" },
         ],
-        [[ 2, "asc" ]] // name
+        [[ 1, "asc" ]] // id
     );
 }

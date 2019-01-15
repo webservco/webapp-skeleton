@@ -25,16 +25,16 @@ class DataTablesDatabase extends \WebServCo\Framework\DataTables\AbstractDataTab
     }
 
     /* abstract */
-    protected function getQuery($searchQuery, $orderQuery, $limitQuery)
+    protected function getQuery($searchQueryPart, $orderQueryPart, $limitQueryPart)
     {
         return sprintf(
             "SELECT SQL_CALC_FOUND_ROWS id, name, value FROM ws_test_data WHERE 1
             %s
             %s
             %s",
-            $searchQuery,
-            $orderQuery,
-            $limitQuery
+            $searchQueryPart,
+            $orderQueryPart,
+            $limitQueryPart
         );
     }
 
