@@ -13,7 +13,7 @@
     <link href="<?=$this->data('url/app', '/')?>favicon.ico" rel="icon" type="image/x-icon" />
 
     <?php /* Optimized css file, do not edit. Please see docs/Layout.md */ ?>
-    <link rel="stylesheet" href="<?=$this->data('url/app', '/')?>assets/css/styles.min.css?v=f21f25a">
+    <link rel="stylesheet" href="<?=$this->data('url/app', '/')?>assets/css/styles.min.css?v=3587e8d">
 </head>
 <body>
 
@@ -31,7 +31,7 @@
     //]]>
     </script>
     <?php /* Optimized js file, do not edit. Please see docs/Layout.md */ ?>
-    <script defer src="<?=$this->data('url/app', '/')?>assets/js/scripts.min.js?v=f21f25a"></script>
+    <script defer src="<?=$this->data('url/app', '/')?>assets/js/scripts.min.js?v=3587e8d"></script>
     <script>
     //<![CDATA[
     window.addEventListener('load', function () { <?php /* https://stackoverflow.com/questions/45869839/javascript-run-inline-script-after-load-async-resources */ ?>
