@@ -9,6 +9,11 @@ A simple [webservco/framework](https://github.com/webservco/framework) Web Appli
 - One starter route (Web and CLI): `App/home`;
 - Example DataTables implementation;
 
+## Optional utilities
+* `pds/skeleton`
+* `squizlabs/php_codesniffer`
+* `phpstan/phpstan`
+
 ---
 
 ## Documentation

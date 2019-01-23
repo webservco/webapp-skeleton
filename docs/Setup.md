@@ -2,7 +2,7 @@
 
 ## Install
 ```
-git clone https://github.com/webservco/webapp-skeleton.git my-project && cd my-project
+PROJECT='my-project'; git clone https://github.com/webservco/webapp-skeleton.git $PROJECT && cd $PROJECT
 ```
 ## Set up your own repository
 ```
