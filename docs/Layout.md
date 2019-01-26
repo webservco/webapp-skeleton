@@ -12,6 +12,12 @@ Edit the `scss` files from `resources/scss`
 ### Compilation
 Edit the `build:css` block from `resources/layout/index.html`
 
+### Utility classes
+```
+.c-pointer {
+    cursor: pointer;
+}
+```
 ---
 
 ## JavaScript
