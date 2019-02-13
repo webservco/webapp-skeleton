@@ -16,7 +16,7 @@ trait ControllerMetaDomainTrait
     {
         return [
             'title' => 'App',
-            'description' => __('Aplication description'),
+            'description' => __('Application description'),
         ];
     }
 }
