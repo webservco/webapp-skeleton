@@ -31,7 +31,7 @@
     //]]>
     </script>
     <?php /* Optimized js file, do not edit. Please see docs/Layout.md */ ?>
-    <script defer src="<?=$this->data('url/app', '/')?>assets/js/scripts.min.js?v=3587e8d"></script>
+    <script defer src="<?=$this->data('url/app', '/')?>assets/js/scripts.min.js?v=2d51702"></script>
     <script>
     //<![CDATA[
     window.addEventListener('load', function () { <?php /* https://stackoverflow.com/questions/45869839/javascript-run-inline-script-after-load-async-resources */ ?>
