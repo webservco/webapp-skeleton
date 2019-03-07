@@ -1,13 +1,13 @@
 <?php
 namespace Project\Domain\DataTables;
 
-final class DataTablesController extends \Project\AbstractController
+final class Controller extends \Project\AbstractController
 {
     public function __construct()
     {
         parent::__construct(__NAMESPACE__);
 
-        $this->repository = new DataTablesRepository($this->outputLoader);
+        $this->repository = new Repository($this->outputLoader);
     }
 
     public function database()

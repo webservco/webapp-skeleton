@@ -1,7 +1,7 @@
 <?php
 namespace Project\Domain\DataTables;
 
-final class DataTablesRepository extends \Project\AbstractRepository
+final class Repository extends \Project\AbstractRepository
 {
     public function getItem($id)
     {
