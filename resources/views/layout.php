@@ -36,6 +36,7 @@
     //<![CDATA[
     window.addEventListener('load', function () { <?php /* https://stackoverflow.com/questions/45869839/javascript-run-inline-script-after-load-async-resources */ ?>
         <?php /* Inline page scripts. Only for custom per-page scripts. Put general scripts in JS files. */ ?>
+        <?php /* Important: do not use for pages loaded via the historyNavigation plugin */ ?>
     });
     //]]>
     </script>
