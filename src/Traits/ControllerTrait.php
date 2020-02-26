@@ -5,6 +5,7 @@ use WebServCo\Framework\Exceptions\ApplicationException;
 
 trait ControllerTrait
 {
+    abstract protected function config();
     abstract public function data($key, $defaultValue = false);
     abstract protected function initDomain();
     abstract protected function initMeta($action);
