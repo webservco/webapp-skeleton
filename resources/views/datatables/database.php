@@ -15,7 +15,7 @@
 <table id="datatables-database" class="table table-sm <?php /*layout problems table-striped */ ?><?php /* doesn't work for complex headers ?>dt-responsive */ ?>" style="width:100%">
     <thead>
         <tr>
-            <th></th>
+            <th>&#160;</th>
             <th><?=__('Id')?></th>
             <th><?=__('Name')?></th>
             <th><?=__('Value')?></th>
@@ -23,7 +23,7 @@
     </thead>
     <tfoot>
         <tr>
-            <th></th>
+            <th>&#160;</th>
             <th><?=__('Id')?></th>
             <th><?=__('Name')?></th>
             <th><?=__('Value')?></th>
