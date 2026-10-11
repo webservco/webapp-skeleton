@@ -2,6 +2,8 @@
 
 A simple [webservco/framework](https://github.com/webservco/framework) Web Application Skeleton to help start a new project fast.
 
+> **Note:**: Deprecated, for reference only.
+
 ---
 
 ## Features
