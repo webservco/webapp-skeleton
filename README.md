@@ -2,7 +2,7 @@
 
 A simple [webservco/framework](https://github.com/webservco/framework) Web Application Skeleton to help start a new project fast.
 
-> **Note:**: Deprecated, for reference only.
+> **Note:** Deprecated, for reference only. It has been replaced by individual components, please see [webservco/sandbox](https://webservco.github.io/sandbox/).
 
 ---
 
